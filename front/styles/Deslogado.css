@@ -4,18 +4,24 @@ body {
 header {
     background-color: #1E1E1E;
     display: flex;
-    height: 7vh;
+    padding: 0 10px;
+    font-size: 1.5em;
 }
 
-header p {
-    font-size: 25px;
+header p, a {
+    font-size: 1em;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
-    margin-left: 10px;
+    text-decoration: none;
 }
 
 header p b {
     color: #16C15A;
+}
+
+section {
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #secApresentacao {
@@ -30,13 +36,12 @@ header p b {
 
 #secApresentacao h1 {
     color: #16C15A;
-    font-size: 65px;
+    font-size: 5em;
     margin: 0px;
 }
 
 #secApresentacao h3 {
-    width: 750px;
-    margin-bottom: 25px;
+    width: 47vw;
     color: white;
 }
 
@@ -107,8 +112,10 @@ header p b {
 
 #cardsContainer {
     display: flex;
+    flex: 1;
     flex-direction: column;
     width: 600px;
+    justify-content: center;
 }
 
 #secCatalogo {
@@ -120,71 +127,111 @@ header p b {
 }
 
 .card {
+    display: flex;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex: 1;
+    max-width: 50%;
     padding: 20px;
     margin: 20px;
-    width: 400px; 
-    height: 100px;
 }
 
 .card h2 {
+    margin: 5px;
     font-family: helvetica;
-    font-family: 10px;
-    font-size: 1px;
+    font-size: 0.9em;
+    color: white;
 }
 
 .card button{
     display: flex;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 5px;
     background-color: #16C15A;
     color: white;
     margin-left: auto;
+    margin-top: auto;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.card button:hover{
+    background-color: #16C15A; 
+    color: white; 
+    transform: scale(1.05); 
+}
+
+.card button:active{
+    background-color: #128b3f; 
+    color: white; 
+    transform: scale(1); 
 }
 
 #secCatalogo article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 50%;
+    padding: 20px;
     text-align: justify;
     color: white;
 }
 
 #secCatalogo article h3{
-    font-size: 50px;
+    font-size: 3em;
     margin: 0;
 }
 
 #secCatalogo article p{
-    font-size: 25px;
+    font-size: 1.7em;
     margin: 0;
 }
 
-#secAvaliacao{
+#secAvaliacao {
     display: flex;
     justify-content: space-between;
     background-color: #16C15A;
-    align-items: center;
     height: 55vh;
 }
 
 #secAvaliacao article {
-    max-width: 50%;
-    text-align: justify;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 45%;
+    padding: 20px;
+    text-align: justify; 
     color: black;
 }
 
-#secAvaliacao article h3{
-    font-size: 50px;
+#secAvaliacao article h3 {
+    font-size: 3em;
     margin: 0;
 }
 
-#secAvaliacao article p{
-    font-size: 25px;
+#secAvaliacao article p {
+    font-size: 1.7em;
     margin: 0;
 }
 
-#secFooter{
+#imgAvaliacao {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 50%;
+}
+
+#imgAvaliacao img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+#secFooter {
     display: flex;
     justify-content: space-between;
     background-color: #1E1E1E;
@@ -193,17 +240,36 @@ header p b {
 }
 
 #secFooter article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 50%;
+    padding: 20px;
     text-align: justify;
     color: white;
 }
 
-#secFooter article h3{
-    font-size: 50px;
+#secFooter article h3 {
+    font-size: 3em;
     margin: 0;
 }
 
-#secFooter article p{
-    font-size: 25px;
+#secFooter article p {
+    font-size: 1.7em;
     margin: 0;
+}
+
+#imgFooter {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgFooter img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
 }

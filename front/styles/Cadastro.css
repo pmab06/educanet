@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background-color: #16C15A;
+    height: 100vh;
+}
+header {
+    background-color: #1E1E1E;
+    display: flex;
+    padding: 0 10px;
+    font-size: 1.5em;
+}
+
+header p, a {
+    font-size: 1em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+header p b {
+    color: #16C15A;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#divMain {
+    display: flex;
+    margin: auto;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#divPerfil, #divCadastro {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+#divPerfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 2px solid #16C15A;
+}
+
+#divPerfil h3, #divPerfil p {
+    margin: 10px 0;
+}
+
+#divPerfil img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#divPerfil button {
+    background-color: #16C15A;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#divPerfil button:hover {
+    background-color: #128b3f;
+    transform: scale(1.05);
+}
+
+#divCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#divCadastro label {
+    margin: 10px 0 5px 0;
+    font-size: 1.1em;
+}
+
+#divCadastro input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}

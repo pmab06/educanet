@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDUCANET</title>
+    <title>EducaNet</title>
     <link rel="stylesheet" href="../styles/Deslogado.css">
 </head>
 
 <body>
     <header>
-        <p>EDUCA<b>NET</b></p>
+        <a href="Deslogado.html"><p>EDUCA<b>NET</b></p> </a>
     </header>
 
     <section id="secApresentacao">
@@ -19,7 +19,7 @@
             estão unidos em um só lugar!
         </h3>
         <div >
-            <button id="btnReg">Abra sua conta agora</button> <a>ou</a> <button id="btnEntrar">Entre com uma conta existente</button>
+            <button id="btnReg" onclick="window.location.href='Cadastro.html'">Abra sua conta agora</button> <a>ou</a> <button id="btnEntrar" onclick="window.location.href='Login.html'">Entre com uma conta existente</button>
         </div>
     </section>
 
@@ -55,16 +55,18 @@
     <section id="secAvaliacao">
         <article>
             <h3>Qualidade garantida</h3>
-            <p>Os cursos no nosso site são cuidadosamente selecionados por
-                nós e ainda possuem avaliação dos usuários para que você tenha certeza que o curso
-                é ideal para você.
-            </p>
+            <p>Os cursos no nosso site são cuidadosamente selecionados por nós e ainda 
+            possuem avaliação dos usuários para que você tenha certeza que o curso é ideal para você.</p>
         </article>
-        <img src="../imgs/img2.png" alt="" width="280px" height="120px">
-    </section>
+        <div id="imgAvaliacao">
+            <img src="../imgs/img2.png" alt="Imagem de Qualidade Garantida">
+        </div>
+    </section>    
 
     <section id="secFooter">
+        <div id="imgFooter">
         <img src="../imgs/img3.png" alt="" width="280px" height="120px">
+        </div>
         <article>
             <h3>Sempre atento ao seu progresso</h3>
             <p>Com nosso dashboard, você tem à disposição uma variedade de ferramentas

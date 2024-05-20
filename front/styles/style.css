@@ -1,0 +1,97 @@
+/* Estilo geral que será aplicado no site */
+
+/* Importando fonte Inter */
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+/* Criando root do CSS para adicionar variáveis de cor
+- Você pode utilizar essas variáveis da seguinte forma: "var(--nome-da-cor)".
+- Também é possível criar mais variáveis no mesmo formato.
+*/
+:root{
+	--verde: rgb(22, 193, 90);
+	--verde-claro: rgb(0, 255, 102);
+	--cinza-escuro: rgb(30, 30, 30);
+	--cinza-claro: rgb(104, 104, 104);
+}
+
+*{
+	font-family: 'Inter';
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--cinza-escuro);
+    display: flex;
+    padding: 10px;
+}
+
+/* Botão Primário (fundo verde e texto branco) */
+.btn-primary {
+    background-color: var(--verde); 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+.btn-primary:hover {
+    background-color: #13a84a; 
+    transform: scale(1.05); 
+}
+
+.btn-primary:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-primary:active {
+    background-color: #128b3f;
+    transform: scale(1); 
+}
+
+/* Botão Primário (fundo transparente com contorno e texto verde) */
+.btn-primary-outline {
+    background-color: transparent; 
+    color: var(--verde); 
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.btn-primary-outline:hover {
+    background-color: var(--verde); 
+    color: white; 
+    transform: scale(1.05); 
+}
+
+.btn-primary-outline:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-primary-outline:active {
+    background-color: #128b3f; 
+    color: white; 
+    transform: scale(1); 
+}
+
+/* Placeholder (quadrado que aparece quando está "carregando" o texto) */
+.placeholder{
+	background-color: gray;
+	height: 16px;
+}
+.placeholder-btn{
+	background-color: var(--verde);
+	height: 24px;
+}

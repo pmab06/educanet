@@ -1,0 +1,77 @@
+body {
+    background-image: url(../imgs/livro_blur.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    display: flex;
+    padding: 30px;
+    background-color: var(--cinza-escuro);
+    border-radius: 1vmin;
+    color: white;
+    flex-direction: column;
+    min-width: 700px;
+}
+
+.card-titulo{
+    display: flex;
+}
+
+.card-conta{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-conta div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 30px;
+}
+
+.card-conta #div1{
+    text-align: center;
+    align-items: center;
+    width: 30%;
+}
+.card-conta #div1 img{
+    margin-bottom: 20px;
+}
+.card-conta #div1 #foto-subtitulo{
+    color: var(--cinza-claro);
+    font-size: small;
+}
+.card-conta #div2{
+    width: 100%;
+}
+.card-conta #div2 label{
+    color: var(--cinza-claro);
+}
+.card-conta #div2 input[type="text"]{
+    margin: 10px 0px;
+}
+.card-footer{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-top: 20px;
+}
+input[type="text"]{
+    background-color: var(--cinza-escuro);
+    border: 2px solid var(--cinza-claro);
+    border-radius: 1vmin;  
+    padding: 10px; 
+}
+
+input[type="text"]::placeholder{
+    color: var(--cinza-claro)
+}

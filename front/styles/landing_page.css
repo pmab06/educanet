@@ -80,13 +80,15 @@ section {
     justify-content: flex-end;
 }
 
+article{
+    font-size: x-large;
+}
 #secCatalogo article {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    padding: 20px;
+    padding-inline: 200px;
     text-align: justify;
     color: white;
 }

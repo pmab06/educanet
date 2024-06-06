@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaNet</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <a href="landing_page.html">
+            <img src="../imgs/Logo_Escuro.png" height="48">
+        </a>
+    </header>
+    <div class="main-container">
+        <aside class="menu-lateral">
+            <div>
+                <img src="../imgs/imgHome.png" alt="">
+                <a href="/" id="home-link">Home</a>
+            </div>
+            <div>
+                <img src="../imgs/imgLupaMenu.png" alt="">
+                <a href="/" id="search-courses-link">Procurar Cursos</a>
+            </div>
+        </aside>
+        <div class="content">
+            <div class="search-container">
+                <h4>Pesquisar Curso</h4>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Digite o curso...">
+                    <button id="search-button"><img src="../imgs/imgLupaBuscador.png" alt="Pesquisar"></button>
+                </div>
+            </div>
+            <section class="courses-section">
+                <div class="section-header">
+                    <h4>Meus cursos em andamento</h4>
+                    <h4>Continue de onde parou</h4>
+                </div>
+                <div class="courses-container">
+                    <div class="courses-in-progress">
+                        <div class="courses">
+                            <header>
+                                <img src="../imgs/Alura.png" alt="">
+                                <p>Alura</p>
+                            </header>
+                            <span>Curso de JavaScript</span>
+                            <p>Capítulo 7 - Utilizando Bibliotecas Externas</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                            <p>85% completo</p>
+                        </div>
+                        <div class="courses">
+                            <header>
+                                <img src="../imgs/Udemy.png" alt="">
+                                <p>Udemy</p>
+                            </header>
+                            <span>Curso de Design Gráfico</span>
+                            <p>Capítulo 1 - Teoria das Cores</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 6%;"></div>
+                            </div>
+                            <p>6% completo</p>
+                        </div>
+                    </div>
+                    <div class="last-video">
+                        <div>
+                            <img src="../imgs/imgVideoAula.png" alt="">
+                        </div>
+                        <span>Aula 1</span>
+                        <span>Capítulo 7 - Utilizando Bibliotecas Externas</span>
+                        <span>Curso de JavaScript</span>
+                        <div>
+                            <img src="../imgs/Alura.png" alt="">
+                        </div>
+                        <p>Alura</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

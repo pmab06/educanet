@@ -106,7 +106,6 @@ header {
 }
 
 .courses-section {
-    padding-top: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -135,12 +134,14 @@ header {
     border-radius: 10px;
     padding: 20px;
     width: 60%;
+    height: 80%;
     margin-right: 5%;
+    margin-bottom: 30px; 
 }
 
 .courses {
     margin-bottom: 20px;
-    border: 1px solid #fff;
+    border: 1px solid var(--cinza-claro);
     border-radius: 10px;
     padding: 10px;
     background-color: var(--cinza-escuro);
@@ -165,43 +166,55 @@ header {
     color: white;
 }
 
-.courses p{
+.courses p {
     margin: 0;
     color: var(--cinza-claro);
     font-size: 13px;
 }
 
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .progress-bar {
+    flex-grow: 1;
     background-color: #ecf0f1;
     border-radius: 5px;
     overflow: hidden;
-    margin: 10px 0;
+    height: 10px;
+    margin-right: 10px; 
 }
 
 .progress {
     background-color: #2ecc71;
-    height: 10px;
+    height: 100%;
     border-radius: 5px;
+}
+
+.progress-text {
+    white-space: nowrap; 
 }
 
 .last-video {
     background-color: var(--cinza-escuro);
     border-radius: 10px;
     padding: 20px;
-    width: 30%;
+    width: 43%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    border: 1px solid #fff; 
 }
 
-.last-video img {
-    margin-bottom: 10px;
+.imgAula img {
+    width: 100%;
 }
 
 .last-video span {
     display: block;
     margin: 5px 0;
+    color: white;
 }
 
 .last-video p {

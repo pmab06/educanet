@@ -1,6 +1,9 @@
-/* home.css */
-body {
-    height: 100vh;
+/* Estilos Globais */
+
+
+html, body {
+    height: 100%;
+    margin: 0; 
     display: flex;
     flex-direction: column;
 }
@@ -9,14 +12,19 @@ header {
     background-color: var(--cinza-escuro);
     padding: 10px;
     flex-shrink: 0;
+    width: 100%; 
 }
-
 
 .main-container {
     display: flex;
     flex: 1;
     height: 100%;
 }
+
+
+
+/* Menu Lateral */
+
 
 .menu-lateral {
     width: 200px;
@@ -26,13 +34,14 @@ header {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    height: 100%;
 }
 
 .menu-lateral div {
     margin-bottom: 20px;
 }
 
-.menu-lateral div img{
+.menu-lateral div img {
     display: column;
     width: 30px;
     height: 30px;
@@ -43,9 +52,13 @@ header {
     text-decoration: none;
     padding: 10px;
     margin-top: 10px;
-    cursor: pointer; 
-    transition: background-color 0.3s, transform 0.3s; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+
+
+/* Conteúdo Principal */
 
 
 .content {
@@ -53,20 +66,21 @@ header {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    overflow-y: auto; 
 }
 
 .search-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinhar no topo verticalmente */
-    align-items: center; /* Centralizar horizontalmente */
-    height: 35vh; /* Altura total da página */
-    padding-top: 20vh; /* Espaço superior de 20% da altura da viewport */
+    justify-content: flex-start;
+    align-items: center;
+    height: 35vh;
+    padding-top: 20vh;
 }
 
 .search-container h4 {
     display: flex;
-    align-items: center; /* Centralizar verticalmente */
+    align-items: center;
     margin: 0;
     margin-bottom: 10px;
     justify-content: center;
@@ -134,9 +148,9 @@ header {
     border-radius: 10px;
     padding: 20px;
     width: 60%;
-    height: 80%;
+    height: 90%;
     margin-right: 5%;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 .courses {
@@ -152,6 +166,7 @@ header {
     display: flex;
     align-items: center;
     color: white;
+    width: 60%;
 }
 
 .courses header img {
@@ -184,7 +199,7 @@ header {
     border-radius: 5px;
     overflow: hidden;
     height: 10px;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .progress {
@@ -194,30 +209,133 @@ header {
 }
 
 .progress-text {
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .last-video {
     background-color: var(--cinza-escuro);
     border-radius: 10px;
     padding: 20px;
-    width: 43%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    border: 1px solid #fff; 
+    border: 1px solid var(--cinza-claro);
+    margin-right: 5%;
+}
+
+.last-video-border {
+    border: 1px solid var(--cinza-claro);
+    padding: 3px;
+    border-radius: 10px;
 }
 
 .imgAula img {
     width: 100%;
 }
 
-.last-video span {
-    display: block;
-    margin: 5px 0;
-    color: white;
+.video-details {
+    margin-bottom: 15px;
 }
 
-.last-video p {
-    margin-top: 10px;
+.video-details span {
+    display: block;
+    color: white;
+    margin: 5px 0;
+}
+
+.video-details p {
+    color: var(--cinza-claro);
+    margin: 0;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.company-logo span {
+    color: white;
     font-weight: bold;
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.details-section .section-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.details-container {
+    display: flex;
+    gap: 20px;
+}
+
+.details-finished {
+    background-color: var(--cinza-escuro);
+    border: 1px solid var(--cinza-claro);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+}
+
+.details-finished span {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details-finished p {
+    color: var(--verde);
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.details-unfinished {
+    background-color: var(--cinza-escuro);
+    border: 1px solid var(--cinza-claro);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+}
+
+.details-unfinished span {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details-unfinished p {
+    color: orange;
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.details-unfinished button {
+    background-color: orange;
 }

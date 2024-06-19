@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
     <header>
         <a href="landing_page.html">
             <img src="../imgs/Logo_Escuro.png" height="48">
         </a>
     </header>
-    <div class="main-container">
+    <main>
         <aside class="menu-lateral">
             <div>
                 <img src="../imgs/imgHome.png" alt="">
@@ -32,80 +34,88 @@
                     <button id="search-button"><img src="../imgs/imgLupaBuscador.png" alt="Pesquisar"></button>
                 </div>
             </div>
-            <section class="courses-section">
-                <div class="section-header">
-                    <h4>Meus cursos em andamento</h4>
-                    <h4>Continue de onde parou</h4>
-                </div>
+            <section>
                 <div class="courses-container">
-                    <div class="courses-in-progress">
-                        <div class="courses">
-                            <header>
-                                <img src="../imgs/Alura.png" alt="">
-                                <p>Alura</p>
-                            </header>
-                            <span>Curso de JavaScript</span>
-                            <p>Capítulo 7 - Utilizando Bibliotecas Externas</p>
-                            <div class="progress-container">
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 85%;"></div>
+                    <div class="card-container">
+                        <h2>Meus cursos em andamento</h2>
+                        <div class="card">
+                            <div class="outline-card">
+                                <div class="course-author">
+                                    <img src="../imgs/Alura.png" alt="">
+                                    <span><b>Alura</b></span>
                                 </div>
-                                <p class="progress-text">85% completo</p>
+                                <div class="course-title">
+                                    <span>Curso de JavaScript</span>
+                                    <span class="subtitle">Capítulo 7 - Utilizando Bibliotecas Externas</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 85%;"></div>
+                                    </div>
+                                    <span class="subtitle">85% completo</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="courses">
-                            <header>
-                                <img src="../imgs/Udemy.png" alt="">
-                                <p>Udemy</p>
-                            </header>
-                            <span>Curso de Design Gráfico</span>
-                            <p>Capítulo 1 - Teoria das Cores</p>
-                            <div class="progress-container">
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 6%;"></div>
+                            <div class="outline-card">
+                                <div class="course-author">
+                                    <img src="../imgs/Udemy.png" alt="">
+                                    <span><b>Udemy</b></span>
                                 </div>
-                                <p class="progress-text">6% completo</p>
+                                <div class="course-title">
+                                    <span>Curso de Design Gráfico</span>
+                                    <span>Capítulo 1 - Teoria das Cores</span>
+                                </div>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 6%;"></div>
+                                    </div>
+                                    <span class="subtitle">6% completo</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="last-video">
-                    <div class="last-video-border">
-                        <div class="imgAula">
-                            <img src="../imgs/imgVideoAula.png" alt="Thumb do vídeo">
+
+                    <div class="card-container">
+                        <h2>Continue de onde parou</h2>
+                        <div class="card">
+                            <div class="outline-card">
+                                <div class="video-thumbnail">
+                                    <img src="../imgs/thumbnail_teste.png" alt="Thumb do vídeo">
+                                </div>
+                                <div class="video-details">
+                                    <span>Aula 1</span>
+                                    <span>Capítulo 7 - Utilizando Bibliotecas Externas</span>
+                                    <p>Curso de JavaScript</p>
+                                </div>
+                                <div class="course-author">
+                                    <img src="../imgs/Alura.png" alt="Logo da empresa">
+                                    <span>Alura</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="video-details">
-                            <span>Aula 1</span>
-                            <span>Capítulo 7 - Utilizando Bibliotecas Externas</span>
-                            <p>Curso de JavaScript</p>
-                        </div>
-                        <div class="company-logo">
-                            <img src="../imgs/Alura.png" alt="Logo da empresa">
-                            <span>Alura</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </section>
 
             <section class="details-section">
-    <div class="section-header">
-        <h4>Dados</h4>
-    </div>
-    <div class="details-container">
-        <div class="details-finished">
-            <span>Cursos Completos</span>
-            <p>3</p>
-            <button class="btn-primary">Ver</button>
+                <div class="section-header">
+                    <h4>Dados</h4>
+                </div>
+                <div class="details-container">
+                    <div class="details-finished">
+                        <span>Cursos Completos</span>
+                        <p>3</p>
+                        <button class="btn-primary">Ver</button>
+                    </div>
+                    <div class="details-unfinished">
+                        <span>Cursos Incompletos</span>
+                        <p>5</p>
+                        <button class="btn-primary">Ver</button>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="details-unfinished">
-            <span>Cursos Incompletos</span>
-            <p>5</p>
-            <button class="btn-primary">Ver</button>
-        </div>
-    </div>
-</section>          
-        </div>
-    </div>
+    </main>
     <script src="../js/scripts.js"></script>
 </body>
+
 </html>

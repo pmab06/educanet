@@ -114,16 +114,13 @@ main {
     align-items: flex-start;
 }
 
-.card-container{
-    width: 50%;
-    flex: 1;
-}
-.courses-container .card:nth-child(1){
+.courses-container .card-container:nth-child(1){
     margin-right: 10px;
-
+    width: 60%;
 }
-.courses-container .card:nth-child(2){
+.courses-container .card-container:nth-child(2){
     margin-left: 10px;
+    width: 40%
 }
 
 .course-author{

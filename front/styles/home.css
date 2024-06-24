@@ -65,7 +65,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     height: 35vh;
-    padding-top: 20vh;
+    padding-top: 6vh;
 }
 
 .search-container h4 {
@@ -112,15 +112,19 @@ main {
 .courses-container {
     display: flex;
     align-items: flex-start;
+    height: 100%;
 }
 
+.courses-container .card-container, .card{
+    height: 100%;
+}
 .courses-container .card-container:nth-child(1){
     margin-right: 10px;
-    width: 60%;
+    flex: 3;
 }
 .courses-container .card-container:nth-child(2){
     margin-left: 10px;
-    width: 40%
+    flex: 2
 }
 
 .course-author{

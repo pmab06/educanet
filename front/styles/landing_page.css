@@ -44,6 +44,10 @@ section {
     justify-content: center;
 }
 
+#cardsContainer .card{
+    flex-direction: row;
+}
+
 #secCatalogo {
     display: flex;
     justify-content: space-between;
